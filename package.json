@@ -1,0 +1,32 @@
+{
+  "name": "42-cent-stripe",
+  "version": "0.1.0",
+  "description": "42-cent adaptor for the stripe payment gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stripe",
+    "42-cent",
+    "payment",
+    "gateway"
+  ],
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/continuous-software/42-cent-stripe.git"
+  },
+  "author": "Laurent Renard",
+  "license": "MIT",
+  "devDependencies": {
+    "42-cent-model": "^2.0.0",
+    "casual": "^1.4.7",
+    "mocha": "^2.2.4"
+  },
+  "dependencies": {
+    "42-cent-base": "^0.9.0",
+    "42-cent-util": "^1.0.0",
+    "object-assign": "^2.0.0",
+    "stripe": "^3.3.4"
+  }
+}
