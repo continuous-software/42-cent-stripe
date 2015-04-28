@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '0.12'
+before_script:
+- npm install
+script:
+- npm test
+after_script:
+- npm run coveralls
+notifications:
+  hipchat:
+    rooms:
+      secure: r0daCjQOd1ppibu5D2GoKhjFOodELkzVETkAi4FG6vLxdSKbQ1nQPUh4zkxKArBTJcpo9S2vJMj+oWQbuC5cdJwDQN9jGV1fFd/+J7SitNrxxY3DXGRBJFBcD7L2JdA3QU7CJNvClCG+EP3IKFi1HEvKqnGbfHWArN0fWA3vjjs=
+env:
+  global:
+    secure: CKt89Pn01BWoTU/URTvOYZNLHz+1HPZi6EtjUGETFQFyN0LOfx1e7UCM/Yv4LLOR5JOta70VF6IdFnH4q7MF95CANAxs7p8feBLSsWOf1ZpjM5YV/7h6lUNYJ1rif1QmdT1A8mZaTXRraCCLBE/Wo7PM+Ze7zZoJMlYnbxo5dFA=

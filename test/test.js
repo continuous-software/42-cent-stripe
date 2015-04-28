@@ -169,7 +169,7 @@ describe('Stripe adaptor', function () {
         })
         .catch(function (err) {
           assert(err._original, '_original should be defined');
-          assert.equals(err.message, 'There is no payment with ID 66666dfgfgfgf5.');
+          assert.equal(err.message, 'There is no payment with ID 66666dfgfgfgf5.');
           done();
         });
     });
@@ -177,7 +177,7 @@ describe('Stripe adaptor', function () {
     it('should void a transaction', function (done) {
       service.authorizeTransaction({
         amount: Math.random() * 100
-      }, creditCards.visa, prospect, extraPaymentFields)
+      }, creditCards.visa, prospect)
         .then(function (transaction) {
           return service.voidTransaction(transaction.transactionId, {});
         })
@@ -209,7 +209,7 @@ describe('Stripe adaptor', function () {
         })
         .catch(function (err) {
           assert(err._original);
-          assert.equal(err.message, '');
+          assert.equal(err.message, "Your card's expiration month is invalid.");
           done();
         });
     });
