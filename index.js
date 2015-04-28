@@ -1,5 +1,5 @@
 var Stripe42 = require('./lib/Stripe.js');
-var Str = require('Stripe');
+var Str = require('stripe');
 var assign = require('object-assign');
 
 module.exports = {
