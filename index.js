@@ -1,18 +1,17 @@
 var Stripe42 = require('./lib/Stripe.js');
 var Str = require('stripe');
-var assign = require('object-assign');
+var assert = require('assert');
 
 module.exports = {
-  factory: function factory (apiSecret, options) {
+  factory: function factory (options) {
+    assert(options.API_SECRET, 'API_SECRET is mandatory');
     var service = new Stripe42(options);
 
     //not writable, not enumarable
     Object.defineProperty(service, '_delegate', {
-      value: Str(apiSecret)
+      value: Str(options.API_SECRET)
     });
-
-    service = assign(service, options);
-    return service
+    return service;
   },
   Stripe: Stripe42
 };

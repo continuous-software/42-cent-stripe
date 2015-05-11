@@ -1,7 +1,6 @@
 'use strict';
 
 var Stripe42 = require('../index.js').factory;
-var GatewayError = require('42-cent-base').GatewayError;
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
 var assert = require('assert');
@@ -62,7 +61,7 @@ describe('Stripe adaptor', function () {
   var service;
 
   beforeEach(function () {
-    service = Stripe42(process.env.API_SECRET);
+    service = Stripe42({API_SECRET: process.env.API_SECRET, testMode: true});
   });
 
   describe('Service', function () {
