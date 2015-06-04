@@ -1,6 +1,6 @@
 {
   "name": "42-cent-stripe",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "42-cent adaptor for the stripe payment gateway",
   "main": "index.js",
   "scripts": {
