@@ -8,9 +8,8 @@ script:
 after_script:
 - npm run coveralls
 notifications:
-  hipchat:
-    rooms:
-      secure: r0daCjQOd1ppibu5D2GoKhjFOodELkzVETkAi4FG6vLxdSKbQ1nQPUh4zkxKArBTJcpo9S2vJMj+oWQbuC5cdJwDQN9jGV1fFd/+J7SitNrxxY3DXGRBJFBcD7L2JdA3QU7CJNvClCG+EP3IKFi1HEvKqnGbfHWArN0fWA3vjjs=
+  slack:
+    secure: nB6mKP180qcNfOoLnS/EcvM0uJWyiX3uqmZZdXFZQpj++Stm0B6N1E3luCVy2cO9zeLDgkJ5aIpcK8UpoqYurARotZJypr9ekihuHlKyoY27OegZVnRNyl1uF3n3lsi4zQxn65aSUgZsm5LuWfDbhF7RFpAVyT8jh5uWQfiMERc=
 env:
   global:
     secure: CKt89Pn01BWoTU/URTvOYZNLHz+1HPZi6EtjUGETFQFyN0LOfx1e7UCM/Yv4LLOR5JOta70VF6IdFnH4q7MF95CANAxs7p8feBLSsWOf1ZpjM5YV/7h6lUNYJ1rif1QmdT1A8mZaTXRraCCLBE/Wo7PM+Ze7zZoJMlYnbxo5dFA=
