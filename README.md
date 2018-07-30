@@ -1,10 +1,8 @@
-[![Build Status](https://travis-ci.org/continuous-software/42-cent-stripe.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-stripe)
+[![Build Status](https://travis-ci.org/continuous-software/42-cent-stripe.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-stripe) [![Greenkeeper badge](https://badges.greenkeeper.io/continuous-software/42-cent-stripe.svg)](https://greenkeeper.io/)
 
 ![42-cent-stripe](http://wiki.redcomponent.com/images/2/25/Stripe_logo_160.png)
 
 ## Installation ##
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/continuous-software/42-cent-stripe.svg)](https://greenkeeper.io/)
 
     $ npm install -s 42-cent-stripe
 
