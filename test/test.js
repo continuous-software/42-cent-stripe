@@ -32,7 +32,7 @@ var creditCards = {
   visa: new CreditCard()
     .withCreditCardNumber('4242424242424242')
     .withExpirationMonth('11')
-    .withExpirationYear('2018')
+    .withExpirationYear('2019')
     .withCvv2('123'),
   mastercard: new CreditCard()
     .withCreditCardNumber(casual.card_number('MasterCard'))
