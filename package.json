@@ -21,7 +21,7 @@
   "devDependencies": {
     "42-cent-model": "^2.0.0",
     "casual": "^1.4.7",
-    "mocha": "^6.2.1"
+    "mocha": "^6.2.2"
   },
   "dependencies": {
     "42-cent-base": "^1.0.0",
