@@ -168,7 +168,7 @@ describe('Stripe adaptor', function () {
         })
         .catch(function (err) {
           assert(err._original, '_original should be defined');
-          assert.equal(err.message, 'No such charge: 66666dfgfgfgf5');
+          assert.equal(err.message, 'No such charge: \'66666dfgfgfgf5\'');
           done();
         });
     });
